@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="telephone=no" name="format-detection">
+    <!--Remove styling of telephone numbers on IOS-->
+    <!--Change content-->
+    <meta name="keywords" content="">
+    <!--Change content-->
+    <meta name="description" content="" />
+    <!--Change content-->
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <title>Power-BI in Dynamics 365</title>
+    <!--Change title-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" async>
+    <link href="css/style.css?v=1" rel="stylesheet">
+    <!-- Stylesheet -->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:700&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+   
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-98106288-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div id="mycnav" class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+                    <a class="navbar-brand" href="index.html" style="padding: 0;padding-top: 15px;padding-left: 10px;"> 
+                       <img class="logo-img" src="images/logo.png" alt="Nsquare logo">                      
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Our Services <b class="caret"></b></a>
+                            <ul class="dropdown-menu multi-level">
+                                <li><a href="crm.html">Customer Relationship Management [CRM]</a></li>
+                                <li><a href="enterprise-mobility.html">Enterprise Mobility</a></li>
+                                <li><a href="product-engineering-services.html">Product Engineering Services</a></li>
+                                <li><a href="web-design-Development.html">Web Design & Development</a></li>
+                                <li><a href="uiux-design.html">UI/UX Design</a></li>
+                                <li><a href="integration-and-data-migration.html">Integration and Data Migration</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">CoE<b class="caret"></b></a>
+                            <ul class="dropdown-menu multi-level">
+                                <li><a href="coe-ecommerce.html">E-commerce</a></li>
+                                <li><a href="coe-elearn.html">E-learning</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="business-model.html">Business Model</a>
+                        </li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+         <style>
+            .cnt img {
+                border: 1px solid #eee;
+            }
+        </style>
+
+        <!-- Begin main content -->
+        <section class="container">
+            <h2 class="hidden-title">Single post - 1</h2>
+
+            <div class="row">
+                <div class="col-sm-12">
+
+                    <!-- Begin article -->
+                    <article class="post">
+                        <span class="mobile"><br><br></span>
+                        <div style="text-align:center;">
+                            <h1>Power-BI in Dynamics 365</h1>
+                        </div>
+
+
+                        <!-- Post image -->
+                        <div class="post__image">
+                            <img src="images/blog/powerbi-banner.png" alt="powerbi banner" />
+                        </div>
+                        <br>
+
+                        <div class="cnt" style="margin-top: 2em;">
+
+                            <p class="page__text text-justify">
+                                Using the CRM Connection URL Before you begin, find your CRM connection URL<br> 1. Log-in to your CRM instance, and go to Settings<br><br>
+                                <img src="images/blog/I1.png" alt="step 1">
+                                <br><br><br>2. Click Developer Resources<br><br>
+                                <img src="images/blog/2.png" alt="step 2">
+                                <br><br><br> 3. At the bottom of thepage, there is an Organization Data Service URL. This is the URL you want to use in the URL field after selecting Get Data in Power BI<br><br>
+                                <img src="images/blog/3.png" alt="step 3">
+                            </p>
+
+                            <br>
+                            <br>
+                            <br>
+                            <p class="page__text text-justify">
+                                Connecting Power BI to Microsoft Dynamics CRM
+                                <br>Open Power BI Desktop.<br> 1. On the main PBI screen, select Get Data <br>2. Then select on More option<br><br>
+                                <img src="images/blog/4.png" alt="step 4">
+                                <br><br><br>3. In the Get Data form, select Online Services and select Dynamics 365 (Online)<br><br>
+                                <img src="images/blog/6.png" alt="step 6">
+                                <br><br><br>4. Paste the Odata URL, then click OK<br><br>
+                                <img src="images/blog/7.png" alt="step 7">
+                                <br><br><br> 5. In the ‘Access an OData feed’, first select Organizational account
+                                <br> 6. Then click the drop down and select the Organizational URL; then click sign in and enter your CRM login credentials
+                                <br> 7. Once you have successfully logged in, click Connect<br><br>
+                                <img src="images/blog/8.png" alt="step 8">
+                                <br><br><br> 8. You will be Navigated to tables form. We are going to make report on the Opportunity table. In the search field, Type Opportunity.
+                                <br> 9. Click on checkbox next to Opportunity.
+                                <br> 10. We don’t need every field from the Opportunity Entity, so we are going to select the fields. Click Edit to choose the fields.<br><br>
+                                <img src="images/blog/9.png" alt="step 9">
+                                <br><br><br> 11. The Query Editor will open. Now we are going to select our fields for reports. Click the Choose Columns button.
+                                <br> 12. Click the Select All Columns field and make are the check boxes are removed.<br><br>
+                                <img src="images/blog/10.png" alt="step 10">
+                                <br><br><br> 13. Now we are going to select the fields we want for reporting. In the Search Columns box, type in following fields names and select them. Below is an example. Select fields you actually use. If you have custom fields, go ahead and pick those as we did in the step above. Once all your fields are selected, click OK.<br>
+
+                                <li>ActualCloseDate</li>
+                                <li>CustomerId Name</li>
+                                <li>ActualValue</li>
+                                <li>OwnerId</li>
+                                <li>EstimatedValue</li>
+                                <li>Statecode</li>
+                                <br> 14. You can give the fields custom names. To rename the fields, double-click in the name and type in the new name. You can name to your choice<br><br>
+                                <img src="images/blog/12.png" alt="step 12">
+                                <br><br>
+                                <li>ActualCloseDate – Actual Close Data</li>
+                                <li>CustomerId Name – Opportunity Name</li>
+                                <li>ActualValue – Actual Revenue</li>
+                                <li>EstimatedCloseDate – Est. Close Date</li>
+                                <li>OwnerId – User</li>
+                                <li>EstimatedValue – Estimated Revenue</li>
+                                <li>Statecode – Status</li>
+                                <li>StageName – Stage</li>
+                                <br><br><br> 15. Update the columns that show ‘Record’. This is a field that contains table of lookup, so, we need to expand the column and select the columns you need. Click the icon on Name of column to see all the columns available.<br><br>
+                                <img src="images/blog/13.png" alt="step 13">
+                                <br><br><br> 16. Un-check the columns that you do not want. Click OK<br> 17. We are ready to load the data. Click the Close & Apply button.<br><br>
+                                <img src="images/blog/14.png" alt="step 14">
+                                <br><br><br> 18. Let’s start creating Report. <br> Select the fields we want to add for report fields are on the right of screen. We can simply click the checkbox, or even we can drag and drop them over the Axis, legend or value etc. <br> Start with checking Estimated Revenue and Stage. We have made a chart of Estimated Revenue by Stage. You can create more visualizations. Pick different chart types. Click the Save button and save your report.<br><br>
+                                <img src="images/blog/15.png" alt="step 15">
+                                <br><br><br>
+                                <br><br><br> 19. Publish to the Power BI.com. After you save your work, click the Publish button. If you previously signed into the Power BI portal, you should see a success message.
+                                <br> Click the link in the message that says “Open ‘opportunity.pbix’ in Power BI. If you have not logged in, you will get prompted to do so; enter the credentials you used to create an account.<br><br>
+                                <img src="images/blog/16.png" alt="step 16">
+                                <br><br><br>
+                                <br><br><br> 20. You should see your Dashboard in the Power BI.com. The dashboard is considered a Report in Power BI.<br> If you want to share your report with others, you have to Pin a visual to an existing Dashboard or create a new one. You can also pin the entire page to a Dashboard by clicking the Pin Live Page button. Select New Dashboard and give it a name, then click Pin live.<br><br>
+                                <img src="images/blog/17.png" alt="step 17">
+                                <br><br><br>
+                                <br><br><br> 21. If you want to share it with others, click the Share button in the upper right of the page. Type in their email and click on Share button. If the user does not have a Power BI account, they will be prompted to create one before they can view the dashboard.<br><br>
+                                <img src="images/blog/18.png" alt="step 18">
+                                <br><br><br>
+
+
+                            </p>
+                           <p class="page__text text-justify">
+                                If this has been insightful, we invite an opportunity for sharing and listening further thoughts and propagate our cut towards the solution.
+                                <br> Feel free to get in touch!
+                                <br><br> Kirit Mandavgane
+                                <br> NSquare Xperts
+                                <br> www.nsquarexperts.com
+                                <br> kirit@nsquarexperts.com
+                            </p>
+
+                        </div>
+                    </article>
+
+                </div>
+
+
+                <!-- End Sidebar-->
+            </div>
+            <!-- End row -->
+        </section>
+        <!-- End main content -->
+
+        <!--Begin footer -->
+        <footer class="footer-wrapper">
+            <!--Begin footer widget-->
+            <div class="container footer-widgets">
+                <div class="row">
+                    <div class="col-sm-4 aboutusfooter_container_section"> <img src="images/footer_logo.png" alt="Footer Logo" />
+                        <div class="row">
+                            <div class="col-sm-6 col-md-12">
+                                <p class="aboutusfooter_paragraph_section"> NSquare is a software development Services Company specialized in Product Engineering along with COEs – CRM and Mobility. We have vertical wide experience with clientele that pan across domains like; Retail, Healthcare, Travel & Hospitality, Insurance, and Human Resource. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2 quicklinks_container_section">
+                        <h3 class="widget-title">Quick Links</h3>
+                        <div class="row">
+                            <div class="col-sm-6 col-md-12">
+                                <ul class="quicklinks_list_section">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about-us.html">About Us</a></li>
+                                    <li><a href="business-model.html">Business Model</a></li>
+                                    <li><a href="blog.html">Blog</a></li>
+                                    <!--<li><a href="portfolio.html">Portfolio</a></li>-->
+                                    <li><a href="contact-us.html">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 serviceslinks_container_section">
+                        <h3 class="widget-title">Services</h3>
+                        <div class="row">
+                            <div class="col-sm-6 col-md-12">
+                                <ul class="serviceslinks_list_section mobile">
+                                    <li><a href="crm.html">Customer Relationship Management [CRM]</a></li>
+                                    <li><a href="enterprise-mobility.html">Enterprise Mobility</a></li>
+                                    <li><a href="product-engineering-services.html">Product Engineering Services</a></li>
+                                    <li><a href="web-design-Development.html">Web Design & Development</a></li>
+                                    <li><a href="uiux-design.html">UI/UX Design</a></li>
+                                    <li><a href="integration-and-data-migration.html">Integration and Data Migration</a></li>
+                                </ul>
+                                <ul class="serviceslinks_list_section desktop">
+                                    <li><a href="crm.html">Customer Relationship Management [CRM]</a></li>
+                                    <li><a href="enterprise-mobility.html">Enterprise Mobility</a></li>
+                                    <li><a href="product-engineering-services.html">Product Engineering Services</a></li>
+                                    <li><a href="web-design-Development.html">Web Design & Development</a></li>
+                                    <li><a href="uiux-design.html">UI/UX Design</a></li>
+                                    <li><a href="integration-and-data-migration.html">Integration and Data Migration</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 contactlinks_container_section">
+                        <h3 class="widget-title">Contact Us</h3>
+                        <div class="row">
+                            <div class="col-sm-6 col-md-12">
+                                <ul class="contactlinks_list_section widget-contacts">
+                                    <li><span class="widget-contacts__item"> <script type="text/javascript" src="js/skype-uri.js"></script>
+                                                <div id="SkypeButton_Call_nilesh">
+                                                    <script type="text/javascript">
+                                                    Skype.ui({
+                                                    "name": "call",
+                                                    "element": "SkypeButton_Call_nilesh",
+                                                    "participants": ["nilesh_kankariya"],
+                                                    "imageSize": 24
+                                                    });
+                                                    </script>
+                                                </div>
+                                            </span></li>
+                                    <li style="margin-bottom:10px;">
+                                        <span class=widget-contacts__item>
+                                           <a href=tel:919168722372><i class="fa icon-circle icon-circle--thin fa-phone"></i>+91-9168722372</a>
+                                    </span>
+
+                                    </li>
+                                    <li><span class="widget-contacts__item"><a href="mailto:info@nsquarexperts.com"><i class="icon-circle icon-circle--thin fa fa-envelope"></i>info@nsquarexperts.com</a></span></li>
+                                    <li><span class="widget-contacts__item"><i class="icon-circle icon-circle--thin fa fa-map-marker footercontactus_location_section"></i>NSquare Xperts LLP, No.205, 2nd floor<br>Stellar Spaces, Rakshak Nagar<br>Kharadi, Pune - 411014<br>Maharashtra, India</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End footer widget -->
+            <!--Begin footer secondary -->
+            <div class="footer-secondary">
+                <div class="divider-circle"></div>
+                <div class="container">
+                    <ul class="social">
+                        <li class="social__item custom-tooltip tooltip--info" title="linkedin">
+                            <a class="icon-circle fa fa-linkedin" href="https://www.linkedin.com/company/nsquare-solutions" target="_blank"></a>
+                        </li>
+                        <li class="social__item custom-tooltip tooltip--info" title="twitter">
+                            <a class="icon-circle fa fa-twitter" href="https://twitter.com/NSquareXperts" target="_blank"></a>
+                        </li>
+                        <li class="social__item custom-tooltip tooltip--info" title="facebook">
+                            <a class="icon-circle fa fa-facebook" href="https://www.facebook.com/NSquare-Xperts-1703424993247983" target="_blank"></a>
+                        </li>
+                    </ul>
+                    <div class="copyright"> <small class="small">&copy; <span class="copyrights_company_name">Nsquare Xperts</span> 2017. All Rights Reserved.</small> </div>
+                </div>
+            </div>
+            <!--End footer secondary -->
+        </footer>
+        <!--End footer -->
+        <div class="top-scroll" id="scrollbtn">
+            <a href="#"></a>
+        </div>
+    </div>
+
+    <!--End wrapper -->
+    <script src="js/jquery.min.js" defer></script>
+
+    <script>
+        window.jQuery || document.write('<script src="external/jquery/jquery-1.11.0.min.js"><\/script>')
+
+    </script>
+
+
+    <script src="external/bootstrap/js/bootstrap.min.js" defer></script>
+    <script src="external/rs-plugin/js/jquery.themepunch.revolution.min.js" defer></script>
+    <script src="external/modernizr/modernizr.custom.91224.js" defer></script>
+    <script src="js/custom.js" defer></script>
+
+
+
+
+
+</body>
+
+</html>
